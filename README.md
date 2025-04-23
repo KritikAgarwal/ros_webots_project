@@ -1,41 +1,49 @@
-Project Description:
-This project implements autonomous and manual obstacle avoidance navigation for a TurtleBot3 robot in a Webots simulation environment. The robot uses LiDAR, GPS, a compass, and a camera to navigate through predefined target points while avoiding obstacles. It also includes logging functionality for 3D mapping using LiDAR point clouds and path tracking.
+📌 Project Description
+This project implements both autonomous and manual navigation for a TurtleBot3 robot in the Webots simulation environment. The robot navigates through predefined target points while avoiding obstacles using various sensors including LiDAR, GPS, compass, and a camera. It also supports logging functionality for 3D mapping using LiDAR point clouds and path tracking.
 
-Project Objectives:
-Enable autonomous obstacle avoidance and target navigation using sensor data.
+🎯 Project Objectives
+Enable autonomous obstacle avoidance and target navigation using real-time sensor data.
 
 Implement manual override control via keyboard inputs.
 
 Integrate LiDAR-based dynamic obstacle detection and camera-based environmental perception.
 
-Log robot paths and 3D point cloud data for mapping purposes.
+Log robot paths and 3D point cloud data for mapping and analysis.
 
-Algorithm/Model Development:
-Autopilot Mode: Calculates the robot’s orientation and distance to the target, adjusts wheel speeds accordingly, and uses a Braitenberg-like reactive system for obstacle avoidance.
+🧠 Algorithm & Model Development
+Autopilot Mode:
+Calculates the robot’s orientation and distance to the target. Adjusts wheel speeds using a Braitenberg-like reactive system for real-time obstacle avoidance.
 
-Obstacle Avoidance: Uses Gaussian-weighted influence from LiDAR data to steer away from nearby obstacles.
+Obstacle Avoidance:
+Employs Gaussian-weighted influence derived from LiDAR data to steer the robot away from nearby obstacles.
 
-Manual Mode: Allows direct keyboard control for exploration.
+Manual Mode:
+Allows keyboard-controlled navigation for free exploration.
 
-Path Logging: Records LiDAR point cloud and robot GPS coordinates into .csv files.
+Path Logging:
+Logs GPS coordinates and LiDAR point cloud data into .csv files for analysis.
 
-Camera Analysis: Periodic RGB sampling at the center of the image to observe surroundings.
+Camera Analysis:
+Periodic RGB sampling from the center of the image to gather environmental context.
 
-GPS and compass modules
+🧩 Hardware Requirements
+GPS and Compass Modules
 
-Raspberry Pi or OpenCR board
+LiDAR Sensor
 
-5. Software Tools:
-Webots: For 3D simulation and robot control
+Raspberry Pi or OpenCR Board
 
-C Programming Language: For writing the controller logic
+🛠️ Software Tools
+Webots: 3D simulation and robot control
 
-CSV Logging: For point cloud and path data output
+C Programming Language: Controller logic implementation
 
-GNU Compiler: To compile the robot controller
+GNU Compiler (GCC): For compiling the control code
+
+CSV Logging: For storing point cloud and path data
 
 
-Output Screenshots:
+📸Output Screenshots:
 
 ![pic1](https://github.com/user-attachments/assets/33ca75a8-7d26-46af-a447-aac1d75ca31e)
 
