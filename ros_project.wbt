@@ -1,0 +1,155 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/CircleArena.proto"
+EXTERNPROTO "../protos/TurtleBot3Burger.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/SandyGround.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/devices/robotis/protos/RobotisLds01.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/trees/protos/Tree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/animals/protos/Sheep.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/animals/protos/Deer.proto"
+
+WorldInfo {
+  basicTimeStep 64
+}
+Viewpoint {
+  orientation 0.06939084540056581 0.97350605392686 -0.21787811625390036 0.6323546030051725
+  position -7.581194578502232 -1.531677132853952 5.017083800917122
+  follow "TurtleBot3Burger"
+  followType "Pan and Tilt Shot"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+CircleArena {
+  radius 3
+  floorAppearance SandyGround {
+  }
+  wallHeight 0.4
+}
+TurtleBot3Burger {
+  hidden position_0_0 4256.727636459616
+  hidden position_0_1 3931.514803516278
+  hidden position_0_2 1009.5298617766124
+  hidden position2_0_2 10.292839155345767
+  hidden position3_0_2 -710.2113665162641
+  hidden position_0_3 2.0693000970733833e-08
+  hidden linearVelocity_0 -2.2518467530227147e-06 6.587979319582291e-07 8.099844414330658e-07
+  hidden angularVelocity_0 -1.3478060540375219e-05 -4.606648680105755e-05 -2.26187845880403e-09
+  hidden position_2_0 13002.82880000044
+  hidden position_2_1 25555.660800000856
+  hidden rotation_3 0.078992472052783 -0.7048959281603177 -0.7048985173923936 3.2992496470516413
+  hidden translation_4 -0.06286391769020039 -0.010000000000000099 -0.042797292906656736
+  hidden rotation_4 0.43375161456295824 -0.6371250092161794 -0.6371273495113127 3.9601098309673493
+  hidden rotation_9 0 -1 0 4.842797808143215
+  hidden linearVelocity_9 -1.5975268267866544e-06 1.8016423682298e-07 -7.681502850041741e-07
+  hidden angularVelocity_9 -1.3478984957571311e-05 -4.606620893671993e-05 -1.0539654762788482e-08
+  hidden rotation_10 0.09406478177649696 -1.7927572324361092e-06 -0.9955660785834992 3.1415896871130977
+  hidden linearVelocity_10 -1.442631092128915e-06 7.09405377694355e-07 -7.687188352521208e-07
+  hidden angularVelocity_10 -1.347950391698282e-05 -4.606605687128687e-05 2.848587624513931e-09
+  hidden rotation_11 -0.32428744012123073 -0.5250776983583206 0.7868488208457501 2.5387022896254616
+  hidden linearVelocity_11 -1.8964831292071973e-07 5.531931483195303e-08 3.068148360985998e-06
+  hidden angularVelocity_11 -1.3829828476547813e-05 -4.7412077435723164e-05 5.534149949999204e-21
+  hidden position_12_0 -0.0904236938775144
+  hidden linearVelocity_12 -8.08278512170746e-06 2.364882307689595e-06 -7.583551671963562e-07
+  hidden angularVelocity_12 -1.3478134141566069e-05 -4.60664917896178e-05 -1.0105598950355345e-08
+  hidden rotation_13 0 -1 0 0.09042369387751668
+  hidden position_13_0 0.022025504529018317
+  hidden linearVelocity_13 -8.544928503362304e-06 2.5000948719471757e-06 -7.565609181803268e-07
+  hidden angularVelocity_13 -1.3478134279348864e-05 -4.6066492008817194e-05 -1.0105599607934546e-08
+  hidden rotation_14 1 0 0 0.02202550452901007
+  hidden linearVelocity_14 -9.004302777171347e-06 2.634487433453292e-06 -7.114328144375293e-07
+  hidden angularVelocity_14 -1.3478134285555053e-05 -4.606649199890103e-05 -1.0105599570973527e-08
+  translation -0.5744076550939908 -2.5356561608515897 -0.0005406488610326041
+  rotation 0.004417057008066531 -0.0006430890169869142 0.9999900379723308 2.8568847140820157
+  controller "turtlebot3_ostacle_avoidance"
+  extensionSlot [
+    GPS {
+    }
+    RobotisLds01 {
+    }
+  ]
+}
+Tree {
+  translation -1.11 -1.86 0
+  scale 0.2 0.2 0.5
+  locked FALSE
+}
+Tree {
+  translation 0.1 0.46 0
+  name "tree(1)"
+  scale 0.2 0.2 0.5
+  locked FALSE
+}
+Tree {
+  translation 0.1 2.07 0
+  name "tree(4)"
+  scale 0.2 0.2 0.5
+  locked FALSE
+}
+Tree {
+  translation 1.2 0.32 0
+  name "tree(3)"
+  scale 0.2 0.2 0.5
+  locked FALSE
+}
+Tree {
+  translation -1.45 0.12 0
+  name "tree(2)"
+  scale 0.2 0.2 0.5
+  locked FALSE
+}
+Tree {
+  translation -1.1 1.23 0
+  name "tree(5)"
+  scale 0.2 0.2 0.5
+  locked FALSE
+}
+Tree {
+  translation 1.32 -0.71 0
+  name "tree(6)"
+  scale 0.2 0.2 0.5
+  locked FALSE
+}
+Tree {
+  translation 0.16 -1.55 0
+  name "tree(7)"
+  scale 0.2 0.2 0.5
+  locked FALSE
+}
+Tree {
+  translation 2.07 -0.65 0
+  name "tree(8)"
+  scale 0.2 0.2 0.5
+  locked FALSE
+}
+Tree {
+  translation 1.81 1.21 0
+  name "tree(9)"
+  scale 0.2 0.2 0.5
+  locked FALSE
+}
+Sheep {
+  scale 0.3
+}
+Sheep {
+  translation -1.12 0.27 0
+  scale 0.3
+  name "sheep(1)"
+}
+Sheep {
+  translation -0.71 1.41 0
+  scale 0.3
+  name "sheep(2)"
+}
+Deer {
+  translation 0.89 1.41 0
+  scale 0.2
+}
+Deer {
+  translation 1.47 -0.97 0
+  scale 0.2
+  name "deer(1)"
+}
